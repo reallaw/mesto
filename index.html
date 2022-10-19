@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <meta name="keywords" content="Mesto">
+    <meta name="author" content="Евгений Крашенинин">
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="page">
+    <header class="header">
+        <img src="./images/header__logo.svg" alt="Mesto логотип" class="header__logo">
+    </header>
+    <main class="main">
+        <section class="profile">
+            <img class="profile__avatar" src="./images/profile__avatar.jpg" alt="Фото профиля">
+            <div class="profile__info">
+                <h1 class="profile__name">Жак-Ив Кусто</h1>
+                <button type="button" class="profile__edit-button"></button>
+                <p class="profile__description">Исследователь океана</p>
+            </div>
+            <button type="button" class="profile__add-button"></button>
+        </section>
+        <section class="photo-grid">
+            <ul class="photo-grid__list">
+                <li class="photo-grid__item">
+                    <img src="./images/photo-grid-karachaevsk.png" alt="Карачаевск" class="photo-grid__img" aria-label="Карачаевск">
+                    <div class="photo-grid__container">
+                        <h2 class="photo-grid__title">Карачаевск</h2>
+                        <button type="button" class="photo-grid__like-button"></button>
+                    </div>
+                </li>
+                <li class="photo-grid__item">
+                    <img src="./images/photo-grid-gora-elbrus.png" alt="Гора Эльбрус" class="photo-grid__img" aria-label="Гора Эльбрус">
+                    <div class="photo-grid__container">
+                        <h2 class="photo-grid__title">Гора Эльбрус</h2>
+                        <button type="button" class="photo-grid__like-button"></button>
+                    </div>
+                </li>
+                <li class="photo-grid__item">
+                    <img src="./images/photo-grid-dombay.png" alt="Домбай" class="photo-grid__img" aria-label="Домбай">
+                    <div class="photo-grid__container">
+                        <h2 class="photo-grid__title">Домбай</h2>
+                        <button type="button" class="photo-grid__like-button"></button>
+                    </div>
+                </li>
+                <li class="photo-grid__item">
+                    <img src="./images/photo-grid-gora-elbrus-1.png" alt="Гора Эльбрус" class="photo-grid__img" aria-label="Гора Эльбрус">
+                    <div class="photo-grid__container">
+                        <h2 class="photo-grid__title">Гора Эльбрус</h2>
+                        <button type="button" class="photo-grid__like-button"></button>
+                    </div>
+                </li>
+                <li class="photo-grid__item">
+                    <img src="./images/photo-grid-dombay-1.png" alt="Домбай" class="photo-grid__img" aria-label="Домбай">
+                    <div class="photo-grid__container">
+                        <h2 class="photo-grid__title">Домбай</h2>
+                        <button type="button" class="photo-grid__like-button"></button>
+                    </div>
+                </li>
+                <li class="photo-grid__item">
+                    <img src="./images/photo-grid-karachaevo-cherkesskaya.png" alt="Карачаево-Черкесская" class="photo-grid__img" aria-label="Карачаево-Черкесская">
+                    <div class="photo-grid__container">
+                        <h2 class="photo-grid__title">Карачаево-Черкесская</h2>
+                        <button type="button" class="photo-grid__like-button"></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__author">&copy; 2022 Mesto Russia</p>
+    </footer>
+    <div class="popup">
+            <form class="form" name="profile-edit">
+                <h2 class="form__title">Редактировать профиль</h2>
+                <input type="text" name="form__edit-profile-name" id="form__input_type_profile-name" placeholder="Имя профиля" value="Жак-Ив Кусто" class="form__input form__input_type_profile-name" required>
+                <input type="text" name="form__edit-profile-description" id="form__input_type_profile-description" placeholder="Описание профиля" value="Исследователь океана" class="form__input form__input_type_profile-description" required>
+                <button class="form__submit-button" type="submit">Сохранить</button>
+                <button class="form__close-button" type="button"></button>
+            </form>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
